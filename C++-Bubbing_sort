@@ -1,0 +1,30 @@
+#include<iostream>
+int main()
+{	using namespace std;
+	int a[10];
+	cout << "please input 10 numbers:"<< endl;
+	for(int j = 0; j < 10; j++)
+	{
+		cin >> a[j];
+	}
+//冒泡排序过程
+	for(int i = 1; i <= 9; i++)
+	{
+		for(int k = 0; k < 10 - i ; k++)
+		{
+			if(a[k] > a[k + 1])
+			{
+				int temp = a[k];
+				a[k] = a[k + 1];
+				a[k + 1] = temp;
+			}
+		}
+		}	
+	
+	
+	for(int j = 0;j < 10; j++)
+	{
+		cout << a[j] << " " ;
+	}
+	return 0;
+}
